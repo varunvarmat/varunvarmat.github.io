@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects in Generated Videos Are Slower Than They Appear</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 20px;
+            text-align: center;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .caption {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: -5px;
+            margin-bottom: 20px;
+        }
+
+        .controls {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 8px 14px;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .video-strip {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .video-item {
+            text-align: center;
+            width: 300px;
+        }
+
+        video {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .video-label {
+            margin-top: 5px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .grid-row {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .grid-item {
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>
+Objects in Generated Videos Are Slower Than They Appear:<br>
+They Follow Sub-Earth Gravity and Don’t Know Galileo’s Principle...for now.
+</h1>
+
+<h2>Teaser</h2>
+<div class="caption">Generated Videos Show Sub Earth gravity and Dont Follow Galileo’s Principle</div>
+
+<!-- Teaser Section Controls ONLY -->
+<div class="controls">
+    <button onclick="playSection('teaser')">▶️ Play Teaser</button>
+    <button onclick="pauseSection('teaser')">⏸️ Pause Teaser</button>
+    <button onclick="toggleSpeedSection('teaser')">⏩ Speed Teaser (8 fps/ 24 fps)</button>
+</div>
+
+<div class="video-strip">
+
+    <div class="video-item">
+        <video class="sync-video teaser" controls muted loop><source src="teaser_videos/gt.mp4"></video>
+        <div class="video-label">Earth</div>
+    </div>
+
+    <div class="video-item">
+        <video class="sync-video teaser" controls muted loop><source src="teaser_videos/wan5b_lora.mp4"></video>
+        <div class="video-label">Gravity Adapter (ours)</div>
+    </div>
+
+    <div class="video-item">
+        <video class="sync-video teaser" controls muted loop><source src="teaser_videos/Mars.mp4"></video>
+        <div class="video-label">Mars</div>
+    </div>
+
+    <div class="video-item">
+        <video class="sync-video teaser" controls muted loop><source src="teaser_videos/wan5b.mp4"></video>
+        <div class="video-label">Wan 5B</div>
+    </div>
+
+    <div class="video-item">
+        <video class="sync-video teaser" controls muted loop><source src="teaser_videos/wan14b.mp4"></video>
+        <div class="video-label">Wan 14B</div>
+    </div>
+
+    <div class="video-item">
+        <video class="sync-video teaser" controls muted loop><source src="teaser_videos/veo3.mp4"></video>
+        <div class="video-label">Veo3</div>
+    </div>
+
+</div>
+
+<!-- -------------------------------------------------------------- -->
+<!-- SINGLE BALL DROPS SECTION -->
+<!-- -------------------------------------------------------------- -->
+
+<h2>Single Ball Drops</h2>
+<div class="caption">Generated Videos show Sub Earth Gravity</div>
+
+<!-- SBD Section Controls ONLY -->
+<div class="controls">
+    <button onclick="playSection('sbd')">▶️ Play Single Ball Drops</button>
+    <button onclick="pauseSection('sbd')">⏸️ Pause Single Ball Drops</button>
+    <button onclick="toggleSpeedSection('sbd')">⏩ Speed Single Ball Drops (8 fps/ 24 fps)</button>
+</div>
+
+
+<div class="grid-row">
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_8/gt_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_8/wan5b_lora_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_8/wan5b_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_8/wan14b_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_8/hunyuan_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_8/veo3_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_8/cosmos_2b_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_8/cosmos_14b_8.mp4"></video></div>
+</div>
+
+<div class="grid-row">
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_4/gt_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_4/wan5b_lora_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_4/wan5b_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_4/wan14b_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_4/hunyuan_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_4/veo3_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_4/cosmos_2b_8.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video sbd" controls muted loop><source src="single_ball/sample_4/cosmos_14b_8.mp4"></video></div>
+</div>
+
+
+
+<!-- Row 3 -->
+<div class="grid-row">
+    <div class="grid-item">
+        <video class="sync-video sbd" controls muted loop><source src="single_ball/sample_29/gt_8.mp4"></video>
+        <div class="video-label">Earth</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video sbd" controls muted loop><source src="single_ball/sample_29/wan5b_lora_8.mp4"></video>
+        <div class="video-label">Gravity Adapter (ours)</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video sbd" controls muted loop><source src="single_ball/sample_29/wan5b_8.mp4"></video>
+        <div class="video-label">Wan 5B</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video sbd" controls muted loop><source src="single_ball/sample_29/wan14b_8.mp4"></video>
+        <div class="video-label">Wan 14B</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video sbd" controls muted loop><source src="single_ball/sample_29/hunyuan_8.mp4"></video>
+        <div class="video-label">Hunyuan</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video sbd" controls muted loop><source src="single_ball/sample_29/veo3_8.mp4"></video>
+        <div class="video-label">Veo3</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video sbd" controls muted loop><source src="single_ball/sample_29/cosmos_2b_8.mp4"></video>
+        <div class="video-label">Cosmos 2B</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video sbd" controls muted loop><source src="single_ball/sample_29/cosmos_14b_8.mp4"></video>
+        <div class="video-label">Cosmos 14B</div>
+    </div>
+</div>
+
+<!-- -------------------------------------------------------------- -->
+<!-- DOUBLE BALL DROPS SECTION -->
+<!-- -------------------------------------------------------------- -->
+
+<h2>Double Ball Drops</h2>
+<div class="caption">Generated Videos with Double Ball Drops show violation of Galileo’s principle - The balls travel unequal distance in equal amounts of time. The gravity adapter performs the task zero shot</div>
+
+<!-- DBD Section Controls ONLY -->
+<div class="controls">
+    <button onclick="playSection('dbd')">▶️ Play Double Ball Drops</button>
+    <button onclick="pauseSection('dbd')">⏸️ Pause Double Ball Drops</button>
+    <button onclick="toggleSpeedSection('dbd')">⏩ Speed Double Ball Drops (8 fps/ 24 fps)</button>
+</div>
+
+<!-- Row 1 -->
+<div class="grid-row">
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_5/gt.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_5/wan5b_lora.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_5/wan5b.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_5/wan14b.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_5/hunyuan.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_5/veo3.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_5/cosmos2b.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_5/cosmos14b.mp4"></video></div>
+</div>
+
+<!-- Row 2 -->
+<div class="grid-row">
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_6/gt.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_6/wan5b_lora.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_6/wan5b.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_6/wan14b.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_6/hunyuan.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_6/veo3.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_6/cosmos2b.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video dbd" controls muted loop><source src="double_ball/sample_6/cosmos14b.mp4"></video></div>
+</div>
+
+<!-- Row 3 -->
+<div class="grid-row">
+    <div class="grid-item">
+        <video class="sync-video dbd" controls muted loop><source src="double_ball/sample_29/gt.mp4"></video>
+        <div class="video-label">Earth</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video dbd" controls muted loop><source src="double_ball/sample_29/wan5b_lora.mp4"></video>
+        <div class="video-label">Gravity Adapter (ours)</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video dbd" controls muted loop><source src="double_ball/sample_29/wan5b.mp4"></video>
+        <div class="video-label">Wan 5B</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video dbd" controls muted loop><source src="double_ball/sample_29/wan14b.mp4"></video>
+        <div class="video-label">Wan 14B</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video dbd" controls muted loop><source src="double_ball/sample_29/hunyuan.mp4"></video>
+        <div class="video-label">Hunyuan</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video dbd" controls muted loop><source src="double_ball/sample_29/veo3.mp4"></video>
+        <div class="video-label">Veo3</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video dbd" controls muted loop><source src="double_ball/sample_29/cosmos2b.mp4"></video>
+        <div class="video-label">Cosmos 2B</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video dbd" controls muted loop><source src="double_ball/sample_29/cosmos14b.mp4"></video>
+        <div class="video-label">Cosmos 14B</div>
+    </div>
+</div>
+
+<!-- -------------------------------------------------------------- -->
+<!-- INCLINED PLANE SECTION -->
+<!-- -------------------------------------------------------------- -->
+
+<h2>Inclined Plane</h2>
+<div class="caption">Generated Videos on Inclined Surfaces. The gravity adapter performs this task zero shot.</div>
+
+<!-- Inclined Plane Controls ONLY -->
+<div class="controls">
+    <button onclick="playSection('inclined')">▶️ Play Inclined Plane</button>
+    <button onclick="pauseSection('inclined')">⏸️ Pause Inclined Plane</button>
+    <button onclick="toggleSpeedSection('inclined')">⏩ Speed Inclined Plane (8fps / 24fps)</button>
+</div>
+
+<!-- Row 1 (no captions) -->
+<div class="grid-row">
+    <div class="grid-item"><video class="sync-video inclined" controls muted loop><source src="inclined_plane/sample_4/gt.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video inclined" controls muted loop><source src="inclined_plane/sample_4/wan5b_lora.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video inclined" controls muted loop><source src="inclined_plane/sample_4/wan5b.mp4"></video></div>
+    <div class="grid-item"><video class="sync-video inclined" controls muted loop><source src="inclined_plane/sample_4/veo3.mp4"></video></div>
+</div>
+
+<!-- Row 2 (with captions) -->
+<div class="grid-row">
+
+    <div class="grid-item">
+        <video class="sync-video inclined" controls muted loop><source src="inclined_plane/sample_8/gt.mp4"></video>
+        <div class="video-label">Earth</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video inclined" controls muted loop><source src="inclined_plane/sample_8/wan5b_lora.mp4"></video>
+        <div class="video-label">Gravity Adapter (ours)</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video inclined" controls muted loop><source src="inclined_plane/sample_8/wan5b.mp4"></video>
+        <div class="video-label">Wan 5B</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video inclined" controls muted loop><source src="inclined_plane/sample_8/veo3.mp4"></video>
+        <div class="video-label">Veo3</div>
+    </div>
+
+</div>
+
+<!-- -------------------------------------------------------------- -->
+<!-- REAL WORLD DATASET SECTION -->
+<!-- -------------------------------------------------------------- -->
+
+<h2>Real World Dataset</h2>
+<div class="caption">The gravity adapter shows zero generalization to a real world dataset(PISA).</div>
+
+<!-- Real World Controls -->
+<div class="controls">
+    <button onclick="playSection('real')">▶️ Play Real World</button>
+    <button onclick="pauseSection('real')">⏸️ Pause Real World</button>
+    <button onclick="toggleSpeedSection('real')">⏩ Speed Real World (8fps / 24fps)</button>
+</div>
+
+<!-- Row 1 -->
+<div class="grid-row">
+    <div class="grid-item">
+        <video class="sync-video real" controls muted loop>
+            <source src="pisa/sample_64/gt_24.mp4">
+        </video>
+        <div class="video-label">Earth</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video real" controls muted loop>
+            <source src="pisa/sample_64/wan5b_lora.mp4">
+        </video>
+        <div class="video-label">Gravity Adapter (ours)</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video real" controls muted loop>
+            <source src="pisa/sample_64/wan5b_oro.mp4">
+        </video>
+        <div class="video-label">ORO</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video real" controls muted loop>
+            <source src="pisa/sample_64/wan5b.mp4">
+        </video>
+        <div class="video-label">Wan 5B</div>
+    </div>
+</div>
+
+<!-- Row 2 -->
+<div class="grid-row">
+    <div class="grid-item">
+        <video class="sync-video real" controls muted loop>
+            <source src="pisa/sample_183/gt_24.mp4">
+        </video>
+        <div class="video-label">Earth</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video real" controls muted loop>
+            <source src="pisa/sample_183/wan5b_lora.mp4">
+        </video>
+        <div class="video-label">Gravity Adapter (ours)</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video real" controls muted loop>
+            <source src="pisa/sample_183/wan5b_oro.mp4">
+        </video>
+        <div class="video-label">ORO</div>
+    </div>
+
+    <div class="grid-item">
+        <video class="sync-video real" controls muted loop>
+            <source src="pisa/sample_183/wan5b.mp4">
+        </video>
+        <div class="video-label">Wan 5B</div>
+    </div>
+</div>
+
+
+<!-- JavaScript -->
+<script>
+
+function playSection(sectionClass) {
+    document.querySelectorAll("." + sectionClass).forEach(v => {
+        v.currentTime = 0;
+        v.play();
+    });
+}
+
+function pauseSection(sectionClass) {
+    document.querySelectorAll("." + sectionClass).forEach(v => v.pause());
+}
+
+const sectionSpeedState = {};
+
+function toggleSpeedSection(sectionClass) {
+
+    sectionSpeedState[sectionClass] = !sectionSpeedState[sectionClass];
+
+    let rate;
+
+    // ---------------------------------------
+    // SPECIAL CASES: Teaser + Single Ball Drops
+    // These are 1× ↔ 3×
+    // ---------------------------------------
+    if (sectionClass === "teaser" || sectionClass === "sbd") {
+        rate = sectionSpeedState[sectionClass] ? 3 : 1;
+
+    // ---------------------------------------
+    // DEFAULT (including Double Ball Drops)
+    // 1× ↔ 0.33×
+    // ---------------------------------------
+    } else {
+        rate = sectionSpeedState[sectionClass] ? 0.33 : 1;
+    }
+
+    document.querySelectorAll("." + sectionClass).forEach(v => {
+        v.playbackRate = rate;
+    });
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
